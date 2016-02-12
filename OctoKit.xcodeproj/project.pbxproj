@@ -38,6 +38,7 @@
 		AAAB693D1C6DCC7B006FA6C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B267891BDDD756003887E3 /* User.swift */; };
 		AAAB693E1C6DCC7B006FA6C6 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE59D71BDFEFB30012E3D2 /* Stars.swift */; };
 		AAAB693F1C6DCC7B006FA6C6 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8711EA11BFCAE9F005DDACA /* Time.swift */; };
+		AAAB69471C6E189B006FA6C6 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAB69461C6E189B006FA6C6 /* RequestKit.framework */; };
 		E7EE59D81BDFEFB30012E3D2 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE59D71BDFEFB30012E3D2 /* Stars.swift */; };
 		E7EE59DA1BE10DA60012E3D2 /* StarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE59D91BE10DA60012E3D2 /* StarsTests.swift */; };
 		E7EE59DC1BE119110012E3D2 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE59DB1BE119110012E3D2 /* Follow.swift */; };
@@ -99,6 +100,7 @@
 		AAAB69301C6DCC59006FA6C6 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB69321C6DCC59006FA6C6 /* OctoKitOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKitOSX.h; sourceTree = "<group>"; };
 		AAAB69341C6DCC59006FA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAB69461C6E189B006FA6C6 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
 		E7EE59D71BDFEFB30012E3D2 /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
 		E7EE59D91BE10DA60012E3D2 /* StarsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsTests.swift; sourceTree = "<group>"; };
 		E7EE59DB1BE119110012E3D2 /* Follow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAB69471C6E189B006FA6C6 /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +207,7 @@
 		B975D5A3F8B0384EFB0C5863 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAAB69461C6E189B006FA6C6 /* RequestKit.framework */,
 				234F4C3E1BDE0FE200A58EF7 /* RequestKit.framework */,
 				23B2679C1BDDDBBE003887E3 /* Nocilla.framework */,
 			);
@@ -546,6 +550,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = OctoKitOSX/Info.plist;
@@ -573,6 +581,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = OctoKitOSX/Info.plist;
@@ -694,6 +706,7 @@
 				AAAB69361C6DCC59006FA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F01C6F2F1A6429CC0072FA44 /* Build configuration list for PBXProject "OctoKit" */ = {
 			isa = XCConfigurationList;
